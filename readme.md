@@ -13,14 +13,14 @@
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+  Creating a 5 animated cards and static card.
 </div>
 
 <br />
 
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Hands-on-2-1)
+![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Hands-on-2)
 
 ---
 
@@ -58,12 +58,6 @@
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
 The purpose is to showcase creativity and skill in web design while adhering to the constraints of using only HTML and CSS for the project. The key components include selecting a captivating design theme for the landing page, developing 5 distinct hero styles, 5 unique static card styles, and 5 animated card styles. The technology used is HTML and CSS, which will be utilized to carefully consider visual elements, layout, and user experience to ensure an engaging and seamless display of heroes and cards on the website.
-
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
 
 ### Key Components
 <!-- TODO: List of Key Components -->
