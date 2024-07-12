@@ -1,9 +1,14 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-image: url("https://www.wallpapertip.com/wmimgs/52-528273_kuroko-no-basket-wallpaper-hd.jpg");
+    background-image: url("https://images.alphacoders.com/742/742643.png");
     background-size: cover;
     background-position: center;
     font-family: Arial, sans-serif;
-    color: #fff;
+    color: white;
 }
 
 .content {
@@ -26,7 +31,7 @@ body {
 }
 
 h1 {
-    font-size: 90px;
+    font-size: 80px;
     margin: 10px 0;
 }
 
@@ -55,9 +60,64 @@ p {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .buttons button:hover {
-    background-color: gray;
+    background-color: darkgray;
+}
+
+.buttons button.glow {
+    animation: glowing 1.5s infinite;
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 5px yellow;
+    }
+    50% {
+        box-shadow: 0 0 20px red;
+    }
+    100% {
+        box-shadow: 0 0 5px blue;
+    }
+}
+
+/* Animation Styles */
+.animated {
+    opacity: 0;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+h1.animated {
+    animation-delay: 0.2s;
+}
+
+h2.animated {
+    animation-delay: 0.4s;
+}
+
+p.animated {
+    animation-delay: 0.6s;
+}
+
+.buttons.animated {
+    animation-delay: 0.8s;
 }

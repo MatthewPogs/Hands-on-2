@@ -13,14 +13,14 @@
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Creating a 5 animated cards and static card.
+  Creating 5 static and 5 animated cards.
 </div>
 
 <br />
 
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Hands-on-2-main)
+![](https://visit-counter.vercel.app/counter.png?page=MatthewPogs/WD-Hands-on-2)
 
 ---
 
@@ -59,6 +59,12 @@
 <!-- The following are just sample -->
 The purpose is to showcase creativity and skill in web design while adhering to the constraints of using only HTML and CSS for the project. The key components include selecting a captivating design theme for the landing page, developing 5 distinct hero styles, 5 unique static card styles, and 5 animated card styles. The technology used is HTML and CSS, which will be utilized to carefully consider visual elements, layout, and user experience to ensure an engaging and seamless display of heroes and cards on the website.
 
+Guiding Question:
+- What is the project
+- Whats the purpose
+- What are key components
+- What technology used and how it is used
+
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
@@ -81,7 +87,7 @@ The purpose is to showcase creativity and skill in web design while adhering to 
 7. File Structure to follow below.
 
 ```
-WD-ProjectName
+WD-Hands-on-2-main
 └─ assets
 |   └─ css
 |   |   └─ style.css
@@ -90,7 +96,16 @@ WD-ProjectName
 |   └─ js
 |       └─ script.js
 └─ pages
-|  └─ pageName
+|  └─ card-gallery page
+|     └─ assets
+|     |  └─ css
+|     |  |  └─ style.css
+|     |  └─ img
+|     |  |  └─ fileWith.jpeg/.jpg/.webp/.png
+|     |  └─ js
+|     |     └─ script.js
+|     └─ index.html
+└─ hero-gallery page
 |     └─ assets
 |     |  └─ css
 |     |  |  └─ style.css
@@ -104,12 +119,10 @@ WD-ProjectName
 ```
 
 ## Resources
-
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Generation of Miracles  Image1 | The sample purpose is how to incorporate an image into the background image using HTML. | https://www.wallpapertip.com/wmimgs/52-528273_kuroko-no-basket-wallpaper-hd.jpg |
-| Generation of Miracles Image2 | The sample purpose is how to incorporate an image into a card layout using HTML. | https://i.pinimg.com/564x/e4/02/a7/e402a751dade05a7ea69a901f0815e36.jpg |
+| Generation of Miracles Image | The sample purpose is how to incorporate an image into a card layout using HTML. | https://i.pinimg.com/564x/e4/02/a7/e402a751dade05a7ea69a901f0815e36.jpg |
 | Murasakibara Image | The sample purpose is how to incorporate an image into a card layout using HTML. | https://i.pinimg.com/564x/84/e0/d8/84e0d84453263c021210da1dcdb77880.jpg |
 | Kagami Image | The sample purpose how to incorporate an image into a card layout using HTML. | https://i.pinimg.com/564x/22/8a/42/228a42f0942a56135b3c6a3336a5d7c1.jpg |
 | Akashi Image | The sample purpose is how to incorporate an image into a card layout using HTML. | https://i.pinimg.com/564x/04/67/ac/0467ac03fa1748d4ffc06ec4e686a349.jpg  |

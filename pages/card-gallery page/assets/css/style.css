@@ -17,6 +17,26 @@ header {
     width: 100%;
 }
 
+header h1 {
+    font-size: 32px;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    animation: rainbow-glow 2s linear infinite;
+}
+
+@keyframes rainbow-glow {
+    50% {
+        text-shadow: 0 5px 10px darkblue;
+    }
+    50% {
+        text-shadow: 0 5px 10px darkblu;
+    }
+    100% {
+        text-shadow: 0 10px 10px darkblue;
+    }
+}
+
 .home-link {
     display: block;
     text-align: center;
@@ -116,23 +136,22 @@ header {
 }
 
 .card-2 {
-    background-color: white;
-    border: 6px solid darkmagenta;
+    background: linear-gradient(120deg, darkmagenta 0%, pink 100%);
 }
 
 .card-3 {
-    background-color: maroon;
-    border: 6px solid black;
+    border-radius: 50px;
+    border: 2px solid red;
+    background-color: white;
 }
 
 .card-4 {
-    background-color: lightcoral;
-    border: 6px solid #FA2A55;
+    background: repeating-linear-gradient(45deg, orange, #FA2A55 10px, #FA2A55 10px, orange 20px);
 }
 
 .card-5 {
-    background-color: lightcyan;
-    border: 6px solid teal;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.19);
+    border: 6px solid rgba(0, 0, 0, 0.5);
 }
 
 .hero-card.card-1 .hero-image {
@@ -144,7 +163,7 @@ header {
 }
 
 .hero-card.card-3 .hero-image {
-    border-bottom: 6px solid black;
+    border-bottom: 2px solid red;
 }
 
 .hero-card.card-4 .hero-image {
@@ -152,7 +171,7 @@ header {
 }
 
 .hero-card.card-5 .hero-image {
-    border-bottom: 6px solid teal;
+    border-bottom: 6px solid rgba(0, 0, 0, 0.5);
 }
 
 .animated-cards .hero-card {

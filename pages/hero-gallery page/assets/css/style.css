@@ -4,7 +4,7 @@ body, html {
     height: 100%;
     width: 100%;
     font-family: Arial, sans-serif;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .home-link {
@@ -17,6 +17,9 @@ body, html {
     font-weight: bold;
     padding: 30px 0;
     width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 
 h1 {
@@ -27,19 +30,9 @@ h1 {
 
 .container {
     position: relative;
-    height: 100%;
+    height: 100vh;
     text-align: center;
-}
-
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://c4.wallpaperflare.com/wallpaper/407/487/686/anime-kuroko-s-basketball-red-eyes-red-hair-wallpaper-preview.jpg') no-repeat center center;
-    background-size: cover;
-    z-index: -1;
+    padding-top: 60px;
 }
 
 .overlay h1 {
@@ -69,14 +62,353 @@ h1 {
     background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
-    color: red;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .text-box h2 {
     margin-top: 0;
+    font-size: 1.5em;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
 }
 
 .text-box p {
-    margin: 10px 0 0;
+    margin: 10px 0;
     color: white;
+    line-height: 1.6;
+}
+
+.top-box {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    box-sizing: border-box;
+    z-index: 2;
+    backdrop-filter: blur(5px);
+}
+
+.top-box h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.top-box p {
+    color: white;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+/* Section 1 Styles */
+#section1 {
+    background: url('https://i.pinimg.com/564x/81/82/c4/8182c4f80f30d4582c0d25a621bee772.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+#section1 h1 {
+    position: absolute;
+    text-align: justify;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10em;
+    color: black;
+}
+
+#section1 .content {
+    bottom: 40px;
+}
+
+#section1 .text-box {
+    background: rgba(0, 0, 0, 0.7);
+    text-align: left;
+    color: white;
+    padding: 30px;
+    border: 5px solid red;
+}
+
+#section1 .text-box h2 {
+    text-align: center;
+    font-size: 2em;
+    color: red;
+    font-family: 'Oswald', sans-serif;
+}
+
+#section1 .text-box p {
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Section 2 Styles */
+#section2 {
+    background: url('https://i.pinimg.com/564x/60/e2/2a/60e22aa0ec3bef1a474a5807c799af7b.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+#section2 h1 {
+    position: absolute;
+    text-align: justify;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 10em;
+    color: darkmagenta;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 5px black;
+    z-index: 1;
+}
+
+#section2 .content {
+    bottom: 60px;
+}
+
+#section2 .text-box {
+    background: white;
+    color: pink;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px darkmagenta;
+    position: relative;
+    width: 30%;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#section2 .text-box h2 {
+    text-align: center;
+    font-size: 2em;
+    color: darkmagenta;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#section2 .text-box p {
+    text-align: center;
+    font-size: 1em;
+    color: black;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+#section2 .text-box::before {
+    font-size: 3em;
+    color: darkmagenta;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+}
+
+#section2 .text-box::after {
+    content: '';
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4d3tRjWStr7nI-0IV-0QHVhf0tZxrICif8g&s') no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    border-radius: 50%;
+    background-color: white;
+    display: block;
+}
+
+/* Section 3 Styles */
+#section3 {
+    background: url('https://i.pinimg.com/736x/d2/ac/58/d2ac5837d8f9c3ec12e6a62916096243.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+#section3 h1 {
+    position: relative;
+    text-align: right;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8em;
+    font-style: italic;
+    color: darkblue;
+}
+
+#section3 .content {
+    bottom: 80px;
+}
+
+#section3 .text-box {
+    background: black;
+    text-align: right;
+    padding: 25px;
+    border: 5px dashed darkblue;
+}
+
+#section3 .text-box h2 {
+    text-align: center;
+    font-size: 3em;
+    color: darkblue;
+    font-family: 'Lato', sans-serif;
+}
+
+#section3 .text-box p {
+    text-align: center;
+    font-size: 1.4em;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Read More Button Styles */
+.read-more-button {
+    display: inline-block;
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.read-more-button:hover {
+    background-color: lightslategray;
+    transform: scale(1.1);
+}
+
+/* Section 4 Styles */
+#section4 {
+    background: url('https://i.pinimg.com/564x/aa/84/37/aa8437ba2797f51d5ca112d2fc93711e.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+#section4 h1 {
+    position: absolute;
+    text-align: justify;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10em;
+    color: white;
+    border: 5px solid white;
+}
+
+#section4 .content {
+    bottom: 100px;
+}
+
+#section4 .text-box {
+    background: lightblue;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    transform: rotate(-3deg);
+    border: 5px solid white;
+}
+
+#section4 .text-box h2 {
+    text-align: center;
+    font-size: 2.2em;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+}
+
+#section4 .text-box p {
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Section 5 Styles */
+#section5 {
+    background: url('https://i.pinimg.com/736x/7d/a1/cd/7da1cd224b554dd3da6b57287ef6125e.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    text-align: left;
+    padding-top: 60px;
+}
+
+#section5 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#section5 h1 {
+    position: relative;
+    text-align: right;
+    bottom: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    color: orange;
+    z-index: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#section5 .content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#section5 .left-box {
+    background: orange;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 30%;
+    margin: 20px;
+    border: 5px solid black;
+}
+
+#section5 .left-box h3, #section5 .left-box h2 {
+    text-align: center;
+    margin: 0;
+    color: darkgreen;
+    font-family: Arial, sans-serif;
+}
+
+#section5 .right-box {
+    background: orange;
+    padding: 20px;
+    border-radius: 10px;
+    border: 5px solid black;
+    width: 60%;
+    margin: 20px;
+}
+
+#section5 .right-box h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: darkgreen;
+}
+
+#section5 .right-box p {
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    line-height: 1.6;
+    margin: 10px 0;
 }
